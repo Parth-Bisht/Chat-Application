@@ -56,6 +56,17 @@ const Container = styled.div`
         padding: 0 1rem;
         gap: 1rem;
     }
+    @media screen and (min-width: 420px) and (max-width: 720px) {
+        padding: 0 8px;
+        grid-template-columns: 6% 88%;
+        gap: 1rem;
+    }
+    @media screen and (min-width: 320px) and (max-width: 420px) {
+        padding: 0px 0px;
+        padding-bottom: 0px;
+        grid-template-columns: 13% 87%;
+        gap: 0.2rem;
+    }
     .button-container{
         display: flex;
         align-items: center;
@@ -67,6 +78,9 @@ const Container = styled.div`
                 font-size: 1.5rem;
                 color: #ffff00c8;
                 cursor: pointer;
+                @media screen and (min-width: 420px) and (max-width: 720px) {
+                font-size: 1.3rem;
+    }
             }
             .emoji-picker-react{
                 position: absolute;
@@ -133,11 +147,29 @@ const Container = styled.div`
                     font-size: 1rem;
                 }
             }
+            @media screen and (min-width: 420px) and (max-width: 720px) {
+                padding: 6px 10px;
+                svg{
+                    font-size: 22px;
+                }
+    }
+    @media screen and (min-width: 320px) and (max-width: 420px) {
+        padding: 2px 9px;
+                svg{
+                    font-size: 20px;
+                }
+        }
             svg{
                 font-size: 2rem;
                 color: white;
             }
         }
+
+        @media screen and (min-width: 320px) and (max-width: 420px) {
+            gap: 0px;
+            width: 85%;
+        }
+        
     }
 `;
 

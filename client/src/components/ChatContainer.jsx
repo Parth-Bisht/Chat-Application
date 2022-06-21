@@ -125,7 +125,20 @@ const Container = styled.div`
                     color: white;
                 }
             }
+            @media screen and (min-width:350px) and (max-width:510px){
+                .avatar{
+                img{
+                    height: 2rem;
+                }
+            }
+            .username{
+                h3{
+                    font-size: 16px;
+                }
+            }
         }
+        }
+       
     }
     .chat-messages{
         padding: 1rem 2rem;
@@ -145,7 +158,6 @@ const Container = styled.div`
             display: flex;
             align-items: center;
             .content{
-                max-width: 40%;
                 overflow-wrap: break-word;
                 padding: 1rem 2rem;
                 font-size: 1.1rem;

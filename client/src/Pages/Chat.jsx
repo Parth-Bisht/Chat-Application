@@ -84,8 +84,11 @@ const Container = styled.div`
     background-color: #00000076;
     display: grid;
     grid-template-columns: 25% 75%;
-    @media screen and (min-width: 720px) and (max-width: 1080px) {
-      gird-template-columns: 35% 65%;
+    @media only screen and (max-width: 1080px) and (min-width: 720px) {
+      grid-template-columns: 35% 65%;
+    }
+    @media only screen and (max-width: 749px) and (min-width: 350px) {
+      grid-template-columns: 40% 60%;
     }
   }
 `;

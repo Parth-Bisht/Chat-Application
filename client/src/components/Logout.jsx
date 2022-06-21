@@ -29,6 +29,9 @@ cursor: pointer;
 svg{
     font-size: 1.3rem;
     color: #ebe7ff;
+    @media screen and (min-width:350px) and (max-width:750px){
+            font-size:0.8rem;
+        }
 }
 `;
 

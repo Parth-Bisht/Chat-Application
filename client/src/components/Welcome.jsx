@@ -25,6 +25,28 @@ img{
 span{
     color: #4e0eff;
 }
+@media screen and (min-width: 508px) and (max-width: 678px) {
+  img{
+    height: 15rem;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  h3{
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 508px) {
+  img{
+    height: 10rem;
+  }
+  h1{
+    font-size: 19px;
+  }
+  h3{
+    font-size: 12px
+  }
+}
 `;
 
 export default Welcome

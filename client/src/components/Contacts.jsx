@@ -116,6 +116,23 @@ background-color: #000420;
                 color: white;
             }
         }
+        @media screen and (min-width:508px) and (max-width:610px){
+          min-height: 3rem;
+        }
+        @media screen and (min-width:350px) and (max-width:508px){
+          gap: 0.5rem;
+          min-height: 2rem;
+          .avatar{
+            img{
+                height: 2rem;
+            }
+        }
+        .username{
+            h3{
+                font-size: 14px;
+            }
+        }
+        }
     }
     .selected{
         background-color: #9186f3;
@@ -143,6 +160,33 @@ background-color: #000420;
     .username{
         h2{
             font-size: 1rem;
+        }
+    }
+  }
+  @media screen and (min-width:508px) and (max-width:610px){
+    .avatar{
+        img{
+            height: 2rem;
+            max-inline-size: 100%;
+        }
+    }
+    .username{
+        h2{
+            font-size: 1.3rem;
+        }
+    }
+  }
+  @media screen and (min-width:350px) and (max-width:508px){
+    gap: 0.5rem;
+    .avatar{
+        img{
+            height: 2rem;
+            max-inline-size: 100%;
+        }
+    }
+    .username{
+        h2{
+            font-size: 17px;
         }
     }
   }
