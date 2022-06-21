@@ -14,6 +14,8 @@ app.use(express.json());
 app.use("/api/auth",userRoute)
 app.use("/api/messages",messageRoute)
 
+app.get("/",(req,res)=> res.send("Chat Application"));
+
 mongoose.connect(process.env.MONGO_URL,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
